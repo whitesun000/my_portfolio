@@ -1,0 +1,53 @@
+body {
+    font-family: sans-serif;
+    background: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.menu-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.app-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.app-item {
+    margin-bottom: 15px;
+}
+
+.app-link {
+    display: block;
+    padding: 15px;
+    background: #4285f4;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.app-link:hover {
+    background: #3367d6;
+    transform: scale(1.02);
+}
+
+.footer-note {
+    color: #666;
+    font-size: 0.8rem;
+    margin-top: 20px;
+}

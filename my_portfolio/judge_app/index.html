@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>どっちがお得？判定機</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>どっちがお得？</h1>
+
+            <div class="item-box">
+                <p>商品A</p>
+                <input type="number" id="priceA" placeholder="価格（円）">
+                <button class="mic-btn" onclick="startListen(priceA)">🎤</button>
+                <input type="number" id="weightA" placeholder="容量（g, 個）">
+                <button class="mic-btn" onclick="startListen(weightA)">🎤</button>
+            </div>
+
+            <div class="vs">VS</div>
+
+            <div class="item-box">
+                <p>商品B</p>
+                <input type="number" id="priceB" placeholder="価格（円）">
+                <button class="mic-btn" onclick="startListen(priceB)">🎤</button>
+                <input type="number" id="weightB" placeholder="容量（g, 個）">
+                <button class="mic-btn" onclick="startListen(weightB)">🎤</button>
+            </div>
+
+            <button class="calc-btn" py-click="compare">判定する！</button>
+
+            <div id="result_area" class="result">結果はここに表示されます</div>
+        </div>
+
+        <script type="py" src="./main.py" config='{"interpreter_terminate_on_error": false}'></script>
+        <script src="script.js"></script>
+    </body>
+</html>
